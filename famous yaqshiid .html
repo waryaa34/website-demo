@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xogta Yaqshiid</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #008CBA;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #008CBA;
+            color: white;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin: 10px;
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #005f7f;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Xogta Yaqshiid</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Goobta</th>
+                    <th>Sharaxaad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Suqa Yaqshiid</td>
+                    <td>Suq mashquul ah oo caan ku ah bulshadeeda iyo alaabada kala duwan.</td>
+                </tr>
+                <tr>
+                    <td>Jardiinada Yaqshiid</td>
+                    <td>Meel qurux badan oo lagu raaxaysto, leh dhir iyo jardiinooyin.</td>
+                </tr>
+                <tr>
+                    <td>stadium koonis</td>
+                    <td>waa stadium labaad ee ugu ween mogadshu.</td>
+                </tr>
+                
+            </tbody>
+        </table>
+        
+        <button id="image1Button">Show Suqa Yaqshiid</button>
+        <button id="image2Button">Show Jardiinada Yaqshiid</button>
+        <button id="image3Button">Show stadium  Koonis</button>
+        
+        
+        <img id="locationImage" src="" alt="Location Image" style="display: none;">
+    </div>
+
+    <script>
+        document.getElementById('image1Button').addEventListener('click', function() {
+            document.getElementById('locationImage').src = 'https://th.bing.com/th/id/R.29eb81a7b54898c80f6208acc4d873ed?rik=7GeRZPWwGBEWCw&riu=http%3a%2f%2fstatic1.squarespace.com%2fstatic%2f5edd93e9b6026b073ffa2662%2ft%2f5edda8013e8b82209b284ddc%2f1591584771305%2fee51576ec1220c0cc7669de6fccf9bd7.jpg%3fformat%3d1500w&ehk=VYMqh9%2btVBtT3ylZu0U7u%2b%2f3KBuzQzdOkmKdZmh83T4%3d&risl=&pid=ImgRaw&r=0'; // URL sawirka Suqa Yaqshiid
+            document.getElementById('locationImage').style.display = 'block';
+        });
+
+        document.getElementById('image2Button').addEventListener('click', function() {
+            document.getElementById('locationImage').src = 'https://via.placeholder.com/400'; // URL sawirka Jardiinada Yaqshiid
+            document.getElementById('locationImage').style.display = 'block';
+        });
+
+        document.getElementById('image3Button').addEventListener('click', function() {
+            document.getElementById('locationImage').src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrG7685ayaX65vZXs3oG3-GI-gOrGGHf9ZpA&s'; 
+            document.getElementById('locationImage').style.display = 'block';
+        });
+
+      
+    </script>
+</body>
+</html>

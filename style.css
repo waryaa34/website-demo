@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: montoserrat;
+}
+nav{
+    background-color: #0082e6;
+    height: 40px;
+    width: 100%;
+    color: aliceblue;
+
+}
+nav a{
+    color: aliceblue;
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    color: aliceblue;
+
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin-top: -23px;
+    color: aliceblue;
+    
+}
+
+.logo{
+    color:var(--color-white);
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.menu_bar ul{
+    list-style: none;
+    display: flex;
+
+}
+.menu_bar ul li{
+    padding: 10px 30px;
+    position: relative;
+}
+.menu_bar ul li a{
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 40px;
+}
+.menu_bar ul li a:hover{
+    color: #3a3e93;
+}
+
+.soogali img{
+    float: left;
+    width: 245px;
+    height: auto;
+
+}
+.menu_bar{
+    max-width: 1200px;
+    margin: auto;
+}
+.bcgrounimg{
+    background-image:  linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(somali.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+}
+h1{
+    color: aliceblue;
+    font-size: 70px;
+    margin-left: 25px;
+    margin-top: 40px;
+}
+p{
+    
+    color: aliceblue;
+    font-size: 25px;
+    margin-left: 33px;
+}
+
+p{
+    color: #fff;
+}
+.pp{
+    margin-left: 520px;
+    font-size: 20px;
+}
+.tell1{
+    margin-left: 515px;
+    color: aliceblue;
+    font-weight: lighter;
+}
+.soci{
+    text-align: right;
+    margin-top: -20px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.card{
+    width: 325px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.4s ease;
+
+
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.card-image{
+    width: 100%;
+
+}
+.card-image img{
+    width: 100%;
+    height: auto;
+}
+.content{
+    padding: 20px;
+}
+.content h3{
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+.content .button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 0.3s ease;
+
+}
+.content .button:hover{
+    background-color: #0056b3;
+}
+.dhb{
+    text-align: center;
+    margin-top: -450px;
+    margin-left: 300px;
+    font-weight: lighter;
+}
+.banking{
+    margin-left: 620px;
+    font-size: 30px;
+    font-weight: lighter;
+    color: black;
+}
+h6{
+    text-align: center;
+    font-size: 15px;
+    margin-left: 200px;
+}
+.View{
+    margin-left: 650px;
+}
+.button1{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 0.3s ease;
+    margin-left: 650px;
+}
+.nn{
+    
+    text-align: center;
+    margin-top: -130px;
+    font-size: 30px;
+    margin-left: 70px;
+    color: #fff;
+    font-weight: lighter;
+    
+}
+
+.lan{
+    text-align: center;
+    font-size: 3em;
+}
+span{
+    color: #007bff;
+}

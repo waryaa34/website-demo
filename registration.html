@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land Registration Form</title>
+    <style>
+        .error-message {
+            color: red;
+            font-size: 0.9em;
+        }
+        form {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  form label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  form button {
+    width: 100%;
+    padding: 10px;
+    background: #0047AB;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background: #003580;
+  }
+  
+  form small.error-message {
+    color: red;
+    font-size: 12px;
+  }
+  
+  /* Phone Container Styling */
+  .phone-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .phone-container select {
+    width: 30%;
+  }
+  
+  .phone-container input {
+    width: 70%;
+  }
+  
+    </style>
+</head>
+<body>
+    <form id="registrationForm">
+        <label for="ownerName">Owner's Name:</label>
+        <input type="text" id="ownerName" required>
+        <span class="error-message"></span><br>
+
+        <label for="landPlotNumber">Land Plot Number:</label>
+        <input type="text" id="landPlotNumber" required>
+        <span class="error-message"></span><br>
+
+        <label for="area">Area (m²):</label>
+        <input type="number" id="area" required>
+        <span class="error-message"></span><br>
+
+        <label for="landType">Type of Land:</label>
+        <select id="landType" required>
+            <option value="">Select Type</option>
+            <option value="Residential">Residential</option>
+            <option value="Commercial">Commercial</option>
+            <option value="Agricultural">Agricultural</option>
+        </select>
+        <span class="error-message"></span><br>
+
+        <label for="ownerContact">Owner Contact:</label>
+        <input type="text" id="ownerContact" required>
+        <span class="error-message"></span><br>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent form submission
+            let isValid = true;
+
+            // Get Form Fields
+            const ownerName = document.getElementById('ownerName');
+            const landPlotNumber = document.getElementById('landPlotNumber');
+            const area = document.getElementById('area');
+            const landType = document.getElementById('landType');
+            const ownerContact = document.getElementById('ownerContact');
+
+            // Clear Previous Error Messages
+            document.querySelectorAll('.error-message').forEach(error => (error.textContent = ''));
+
+            // Helper function to validate a field and display an error message
+            function validateField(field, message) {
+                if (field.value.trim() === '') {
+                    field.nextElementSibling.textContent = message; // Display error message
+                    isValid = false;
+                }
+            }
+
+            // Validate Fields
+            validateField(ownerName, 'Owner\'s name is required.');
+            validateField(landPlotNumber, 'Land plot number is required.');
+            validateField(area, 'Area is required.');
+            validateField(landType, 'Type of land is required.');
+            validateField(ownerContact, 'Owner contact is required.');
+
+            // Additional Validation for Owner Contact
+            const contactPattern = /^[0-9]{10,15}$/;
+            if (ownerContact.value.trim() !== '' && !ownerContact.value.match(contactPattern)) {
+                ownerContact.nextElementSibling.textContent = 'Please enter a valid contact number (10-15 digits).';
+                isValid = false;
+            }
+
+            // If Valid, Submit the Form
+            if (isValid) {
+                alert('Registration successful!');
+                document.getElementById('registrationForm').reset();
+            }
+        });
+    </script>
+</body>
+</html>

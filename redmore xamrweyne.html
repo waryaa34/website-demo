@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xamar Weyne</title>
+    
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            color: #333;
+        }
+
+        nav {
+            width: 100%;
+            background-color: #3498db;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        nav h1 {
+            color: white;
+            margin: 0;
+        }
+
+        .menu_bar {
+            display: flex;
+            align-items: center;
+            background-color: #2980b9;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            margin-top: 10px;
+        }
+
+        .soogali img {
+            height: 50px;
+            margin-right: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        li {
+            margin: 0 15px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: #1abc9c;
+        }
+
+        .bordered-paragraph {
+            padding: 20px;
+            border: 3px solid #3498db;
+            border-radius: 15px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            text-align: left;
+            margin-top: 20px;
+            line-height: 1.6;
+            color: #333;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .bordered-paragraph:hover {
+            background-color: #3498db; /* Midabka cusub */
+            color: #ffffff; /* Midabka qoraalka */
+            transform: scale(1.02); /* Kordhinta cabbirka */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Xamar Weyne</h1>
+    </nav>
+
+    
+    <p class="bordered-paragraph" id="myParagraph">
+        <strong>Xamar Weyne</strong> waa degmo ku taalla magaalada Muqdisho ee Gobolka Banaadir. Waxay caan ku tahay xeebteeda quruxda badan iyo taariikhda hodanka ah. Degmadani waxay ahayd dhul xeebeed ay ku nool yihiin dad xoolo dhaqato ah iyo kalluumeysan, waxaana la aasaasay qarnigii 16-aad.
+
+        Xamar Weyne waxay leedahay dhismayaal taariikhi ah, sida <em>masaajidka Marwaas</em>, oo ah masaajidkii ugu horeeyay ee laga furay dalka. Degmadu waxay sidoo kale caan ku tahay ganacsiga, iyadoo ay ku yaallaan carwooyin waaweyn iyo dukaamo kala duwan. Dadka deggan Xamar Weyne waxay ka kooban yihiin ganacsato, jilayaal, iyo macallimiin, kuwaas oo ka shaqeeya horumarinta bulshada iyo dhaqanka.
+
+        Xamar Weyne waxay leedahay taariikh dheer oo xusuus leh, waxaana lagu yaqaan quruxda xeebteeda iyo saraha dhaadheer ee dhismayaasha. Degmadu waxay mar walba soo jiidataa dadka booqda, iyadoo ay ka mid tahay meelaha ugu muhiimsan Muqdisho.
+    </p>
+
+    <script>
+        const paragraph = document.getElementById('myParagraph');
+
+        paragraph.addEventListener('mouseenter', () => {
+            paragraph.style.backgroundColor = '#3498db'; // Midabka cusub
+            paragraph.style.color = '#ffffff'; // Midabka qoraalka
+            paragraph.style.transform = 'scale(1.05)'; // Kordhinta cabbirka
+        });
+
+        paragraph.addEventListener('mouseleave', () => {
+            paragraph.style.backgroundColor = '#ffffff'; // Midabka asalka
+            paragraph.style.color = '#000000'; // Midabka qoraalka asalka
+            paragraph.style.transform = 'scale(1)'; // Soo celinta cabbirka
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Deyniile</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #eaeaea;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .card {
+            background-color: #fff;
+            border: 2px solid #008CBA; /* Midabka Xamar Weyne */
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 600px; /* Ballaarinta card-ka */
+            margin: 20px auto; /* Center card */
+        }
+
+        h1 {
+            color: white; /* Midabka h1 */
+            margin-bottom: 20px;
+            background-color: #008CBA;
+        }
+
+        h2 {
+            color: #008CBA; /* Midabka cinwaanka */
+        }
+
+        button {
+            padding: 12px 25px;
+            background-color: #008CBA; /* Midabka badhanka */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #005f7f; /* Midabka badhanka marka la riixo */
+        }
+
+        .message {
+            display: none;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        .icon {
+            color: green;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> Deyniile</h1>
+        <div class="card">
+            <h2>Welcome to Deyniile</h2>
+            <p>Deyniile waa degmo ku taalla magaalada Muqdisho, oo ka tirsan gobolka Banaadir. Waxay caan ku tahay bulshadeeda isirkeeda kala duwan, taasoo ka dhigaysa mid ka mid ah meelaha ugu firfircoon ee magaalada. Deyniile waxay leedahay taariikh dheer oo ganacsi, iyadoo markii hore ahayd goob muhiim ah oo is-dhexgal bulsho. Degmadu waxay qiyaastii leedahay 150,000 oo qof, waxaana ku nool dad ka kala yimid deegaano kala duwan. Deyniile sidoo kale waxay leedahay kaabayaasha muhiimka ah sida dugsiyada, xarumaha caafimaadka, iyo suuqyada, taasoo ka caawisa horumarinta nolosha bulshada. Dadaallada lagu horumarinayo adeegyada bulshada iyo kaabayaasha ayaa sii kordhaya, iyadoo bulshada deggan ay ka shaqeyneyso sidii ay u xoojin lahayd nabadgelyada iyo horumarka deegaanka.</p>
+            <button id="alertButton">Thnak you</button>
+            <div class="message" id="thankYouMessage">
+                <span class="icon">✔</span> Thank you for reading! Welcome
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('alertButton').addEventListener('click', function() {
+            document.getElementById('thankYouMessage').style.display = 'block';
+        });
+    </script>
+</body>
+</html>

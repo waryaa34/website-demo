@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degmada Yaqshiid</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            background-color: #e0f7fa; /* Midabka badhka cagaaran */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .info-box {
+            border: 3px solid #008CBA;
+            border-radius: 10px;
+            padding: 30px;
+            background-color: white;
+            width: 90%;
+            max-width: 800px;
+            margin: 20px 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #008CBA;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #4CAF50; /* Cagaaran */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #thankYouMessage {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #4CAF50; /* Cagaaran */
+        }
+    </style>
+    <script>
+        function showMessage() {
+            document.getElementById('thankYouMessage').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <div class="info-box">
+        <h1>Degmada Yaqshiid</h1>
+        <p>Degmada Yaqshiid, oo ka tirsan Muqdisho, Soomaaliya, waa deegaan leh taariikh qoto dheer iyo bulsho firfircoon. Cabirka degmada wuxuu ku dhow yahay 20 km², iyadoo ay ku nool yihiin qiyaastii 100,000 ilaa 150,000 oo qof. Yaqshiid waxay caan ku tahay suuqyadeeda iyo xarumaha waxbarasho ee muhiimka ah.</p>
+        <button onclick="showMessage()">Thnak you</button>
+        <div id="thankYouMessage">Thank You you reading! welcome <span role="img" aria-label="green checkmark">✅</span></div>
+    </div>
+</body>
+</html>
